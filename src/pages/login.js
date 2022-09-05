@@ -1,10 +1,17 @@
 import React from "react";
-import Button from "@mui/material/Button";
+import Form from "../components/form";
+import { Typography, Paper } from "@mui/material";
+
 const login = () => {
   return (
-    <div>
-      <Button>login </Button>
-      login
+    <div className="container">
+      <Paper elevation={2}>
+        <Typography variant="h4" gutterBottom>
+          Welcome to the Direct Sales Portal
+        </Typography>
+
+        <Form />
+      </Paper>
     </div>
   );
 };

@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
+import { AppBar } from "@mui/material";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <AppBar position="static" CLASS="navbar-container">
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="dashboard">Dashboard</Link>
+      </nav>
+    </AppBar>
+  );
+};
 
-export default Navbar
+export default Navbar;
