@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiDrawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
@@ -19,7 +19,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems, secondaryListItems } from "./listItems";
 import Chart from "./Chart";
 import Deposits from "./Deposits";
-import Orders from "./Orders";
+import Agents from "./Agents";
 import Copyright from "./CopyRight";
 
 const drawerWidth = 240;
@@ -67,8 +67,6 @@ const Drawer = styled(MuiDrawer, {
     }),
   },
 }));
-
-const mdTheme = createTheme();
 
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
@@ -161,7 +159,7 @@ function DashboardContent() {
                 <Chart />
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+
             <Grid item xs={12} md={4} lg={3}>
               <Paper
                 sx={{
@@ -174,10 +172,10 @@ function DashboardContent() {
                 <Deposits />
               </Paper>
             </Grid>
-            {/* Recent Orders */}
+
             <Grid item xs={12}>
               <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                <Orders />
+                <Agents />
               </Paper>
             </Grid>
           </Grid>

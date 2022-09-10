@@ -27,14 +27,14 @@ export default function SignIn() {
       <CssBaseline />
       <Box
         sx={{
-          marginTop: 8,
+          marginTop: 10,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
         }}
       >
         <Typography component="h4" variant="h4" gutterBottom>
-          Welcom to the Websit Toolbar
+          Welcom To The Direct Sale Portal
         </Typography>
         <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
           <LockOutlinedIcon />
